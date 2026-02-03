@@ -26,6 +26,48 @@ header {
   border-radius: 5px;
 }
 
+/* Contact Buttons */
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.contact-btn {
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Button Colors */
+.contact-btn.email {
+  background: #ea4335;
+}
+
+.contact-btn.github {
+  background: #333;
+}
+
+.contact-btn.linkedin {
+  background: #0077b5;
+}
+
+/* Hover Effects */
+.contact-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  opacity: 0.9;
+}
+
+
 section {
   padding: 50px 20px;
   text-align: center;
@@ -92,3 +134,4 @@ footer {
     align-items: center;
   }
 }
+
