@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shannu | Developer & Tester</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Shannu</h1>
+  <p>Software Developer | Software Tester</p>
+  <a href="#projects" class="btn">View Projects</a>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate Software Developer and Software Tester (Fresher) with hands-on
+    experience in web development and manual testing. I enjoy building applications
+    and ensuring their quality through structured testing.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skill-container">
+    <div class="card">
+      <h3>Development</h3>
+      <p>HTML, CSS, JavaScript, PHP, MySQL, Java, Python (Basics)</p>
+    </div>
+    <div class="card">
+      <h3>Testing</h3>
+      <p>Manual Testing, SDLC, STLC, Test Cases, Bug Reporting</p>
+    </div>
+    <div class="card">
+      <h3>Tools</h3>
+      <p>GitHub, XAMPP, VS Code, JIRA (Basic)</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showTab('dev')">Developer</button>
+    <button class="tab-btn" onclick="showTab('test')">Tester</button>
+  </div>
+
+  <div id="dev" class="tab-content active">
+    <div class="project-card">
+      <h3>AgroCulture Web Application</h3>
+      <p><strong>Tech:</strong> PHP, MySQL, HTML, CSS</p>
+      <p>Platform connecting farmers and buyers digitally.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Dr. HeAlify Chatbot</h3>
+      <p><strong>Tech:</strong> Python, Flask</p>
+      <p>Health assistant chatbot with symptom-based guidance.</p>
+    </div>
+  </div>
+
+  <div id="test" class="tab-content">
+    <div class="project-card">
+      <h3>E-commerce Website Testing</h3>
+      <p>Test case creation, execution & defect reporting.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Mobile Number Validation Testing</h3>
+      <p>Functional & boundary testing scenarios.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: yourmail@gmail.com</p>
+  <p>GitHub: github.com/yourusername</p>
+  <p>LinkedIn: linkedin.com/in/yourname</p>
+</section>
+
+<footer>
+  <p>© 2026 Shannu | Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
