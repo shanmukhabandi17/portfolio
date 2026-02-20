@@ -1,111 +1,951 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Shanmukha Bandi | Developer & Tester</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<meta charset="UTF-8">
 
-<header>
-  <h1>Shanmukha Bandi</h1>
-  <p>Software Developer | Software Tester</p>
-  <a href="#projects" class="btn">View Projects</a>
+<title>Shanmukha Bandi | Software Developer & Tester</title>
+
+<meta name="description" content="Portfolio of Shanmukha Bandi, Software Developer & Software Tester Fresher.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- SEO -->
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#00adb5">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Shanmukha Bandi Portfolio">
+<meta property="og:description" content="Software Developer & Tester Portfolio">
+<meta property="og:type" content="website">
+
+<!-- Preconnect for speed -->
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+<!-- FontAwesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+integrity="sha512-xh6..." crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+<link rel="preload" href="Shanmukha_Bandi_17.pdf" as="document">
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/favicon.png">
+</head>
+
+
+<body>
+  <div class="floating-shapes">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+  <div id="top"></div>
+
+  <div id="loader">
+  <div class="loader-ring"></div>
+</div>
+
+
+<a href="#about" class="skip-link">Skip to content</a>
+
+<div id="scroll-progress"></div>
+
+<nav class="navbar" role="navigation" aria-label="Main Navigation">
+
+<div class="logo">
+
+<svg class="name-logo"
+     viewBox="0 0 500 100"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <linearGradient id="logoGradient"
+                    x1="0%" y1="0%"
+                    x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00adb5"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+
+    <filter id="logoGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+  </defs>
+
+  <!-- SB Badge -->
+  <circle cx="40"
+          cy="50"
+          r="28"
+          class="logo-circle"/>
+
+  <text x="40"
+        y="58"
+        text-anchor="middle"
+        class="logo-initials">
+    SB
+  </text>
+
+  <!-- Full name -->
+  <text x="90"
+        y="60"
+        class="logo-fullname">
+    Shanmukha Bandi
+  </text>
+
+  <!-- Animated Brackets -->
+  <text x="370"
+        y="60"
+        class="logo-brackets">
+    &lt;/&gt;
+  </text>
+
+</svg>
+
+</div>
+
+
+
+
+  <div class="nav-actions">
+
+    
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+
+</div>
+
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+
+    <li><a href="#experience">Experience</a></li>
+<li><a href="#achievements">Achievements</a></li>
+<li><a href="#certifications">Certifications</a></li>
+<li><a href="#github">GitHub</a></li>
+<li><a href="#why-me">Why Me</a></li>
+<li><a href="#tools">Tools</a></li>
+<li><a href="#resume-preview">Resume</a></li>
+<li><a href="#availability">Availability</a></li>
+
+  </ul>
+</nav>
+
+<div id="overlay"></div>
+
+<div class="scroll-spy" aria-hidden="true">
+  <a href="#about" data-id="about"></a>
+  <a href="#skills" data-id="skills"></a>
+  <a href="#projects" data-id="projects"></a>
+  <a href="#contact" data-id="contact"></a>
+</div>
+
+<header class="hero" role="banner">
+  <!-- <div class="bg-blobs">
+  <span></span>
+  <span></span>
+  <span></span> -->
+  <!-- <div class="floating-symbols">
+  <span>&lt;/&gt;</span>
+  <span>{ }</span>
+  <span>&lt;div&gt;</span>
+  <span>JS</span>
+  <span>PHP</span>
+</div> -->
+
+</div>
+
+  <div id="particles-js"></div>
+
+  <h1 id="typing" aria-live="polite"></h1>
+  <p id="typing-role"></p>
+
+  <div class="hero-buttons">
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="Shanmukha_Bandi_17.pdf" download class="btn resume">
+      <i class="fas fa-download"></i> Resume
+    </a>
+  </div>
+
+  <!-- <button id="darkToggle" aria-label="Toggle dark mode">🌙</button> -->
 </header>
 
+<main role="main">
+
 <section id="about">
-  <h2>About Me</h2>
+  <h2 class="wave-title">
+  About Me
+  <svg class="wave-underline" viewBox="0 0 200 12" preserveAspectRatio="none">
+    <path d="M0 6 Q 25 0 50 6 T 100 6 T 150 6 T 200 6" />
+  </svg>
+</h2>
   <p>
-    I am a passionate Software Developer and Software Tester (Fresher) with hands-on
-    experience in web development and manual testing. I enjoy building applications
-    and ensuring their quality through structured testing.
+    <!-- I am a passionate Software Developer and Software Tester (Fresher)
+    with hands-on experience in web development and manual testing. -->
+    Motivated MCA postgraduate with strong foundations in software development, data analysis, and machine learning.
+Experienced in building intelligent systems including AI-driven chatbots, e-commerce platforms, and predictive ML models.
+Skilled at delivering efficient, reliable solutions with solid problem-solving and full-stack development capabilities.
+
   </p>
 </section>
 
 <section id="skills">
   <h2>Skills</h2>
-  <div class="skill-container">
-    <div class="card">
-      <h3>Development</h3>
-      <p>HTML, CSS, JavaScript, PHP, MySQL, Java, Python (Basics)</p>
-    </div>
-    <div class="card">
-      <h3>Testing</h3>
-      <p>Manual Testing, SDLC, STLC, Test Cases, Bug Reporting</p>
-    </div>
-    <div class="card">
-      <h3>Tools</h3>
-      <p>GitHub, XAMPP, VS Code, JIRA (Basic)</p>
-    </div>
+  <div class="cards">
+
+  <div class="card skill-card">
+    <i class="fab fa-html5"></i>
+    <i class="fab fa-css3-alt"></i>
+    <i class="fab fa-js"></i>
+    <i class="fab fa-php"></i>
+    <i class="fas fa-database"></i>
+    <p>HTML, CSS, JavaScript, PHP, MySQL</p>
   </div>
+
+  <div class="card skill-card">
+    <i class="fas fa-vial"></i>
+    <i class="fas fa-diagram-project"></i>
+    <i class="fas fa-clipboard-check"></i>
+    <p>Manual Testing, SDLC, STLC, Test Cases</p>
+  </div>
+
+  <div class="card skill-card">
+    <i class="fab fa-github"></i>
+    <i class="fas fa-server"></i>
+    <i class="fas fa-code"></i>
+    <p>GitHub, XAMPP, VS Code</p>
+  </div>
+
+</div>
+
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
 
-  <div class="tabs">
-    <button class="tab-btn active" onclick="showTab('dev')">Developer</button>
-    <button class="tab-btn" onclick="showTab('test')">Tester</button>
+  <div class="tabs" role="tablist" data-active="dev">
+    <button class="tab-btn active" data-tab="dev">Developer</button>
+    <button class="tab-btn" data-tab="test">Tester</button>
   </div>
 
+  <!-- Developer Projects Slider -->
   <div id="dev" class="tab-content active">
-    <div class="project-card">
-      <h3>AgroCulture Web Application</h3>
-      <p><strong>Tech:</strong> PHP, MySQL, HTML, CSS</p>
-      <p>Platform connecting farmers and buyers digitally.</p>
-    </div>
+    <div class="project-slider">
 
-    <div class="project-card">
-      <h3>Dr. HeAlify Chatbot</h3>
-      <p><strong>Tech:</strong> Python, Flask</p>
-      <p>Health assistant chatbot with symptom-based guidance.</p>
+      <div class="project-card"
+           data-title="AgroCulture Web Application"
+           data-desc="description: is E-commerce platform connecting farmers and customers."
+           data-tech="Skills used: PHP, MySQL, HTML, CSS">
+        <h3>AgroCulture Web Application</h3>
+              <div class="project-links">
+
+                <a href="https://github.com/shanmukhabandi17"
+                  target="_blank" rel="noopener"
+                  class="project-btn github">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+
+                <a href="#"
+                  target="_blank" rel="noopener"
+                  class="project-btn demo">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+
+              </div>
+
+
+      </div>
+
+      <div class="project-card"
+           data-title="Servo Performance Prediction"
+           data-desc="description: Machine learning project predicting servo efficiency."
+           data-tech="Skills used: Python, ML, Gradio">
+        <h3>Servo Performance Prediction</h3>
+              <div class="project-links">
+
+                <a href="https://github.com/shanmukhabandi17"
+                  target="_blank" rel="noopener"
+                  class="project-btn github">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+
+                <a href="#"
+                  target="_blank" rel="noopener"
+                  class="project-btn demo">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+
+              </div>
+      </div>
+
     </div>
   </div>
 
+  <!-- Tester Projects Slider -->
   <div id="test" class="tab-content">
-    <div class="project-card">
-      <h3>E-commerce Website Testing</h3>
-      <p>Test case creation, execution & defect reporting.</p>
-    </div>
+    <div class="project-slider">
 
-    <div class="project-card">
-      <h3>Mobile Number Validation Testing</h3>
-      <p>Functional & boundary testing scenarios.</p>
+      <div class="project-card"
+           data-title="E-commerce Website Testing"
+           data-desc="Manual testing with defect reporting."
+           data-tech="STLC, Test Cases">
+        <h3>E-commerce Website Testing</h3>
+              <div class="project-links">
+
+                <a href="https://github.com/shanmukhabandi17"
+                  target="_blank" rel="noopener"
+                  class="project-btn github">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+
+                <a href="#"
+                  target="_blank" rel="noopener"
+                  class="project-btn demo">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+
+              </div>
+              
+      </div>
+
     </div>
   </div>
+
+</section>
+
+
+<!-- PROJECT MODAL -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+    <p id="modalTech"></p>
+  </div>
+</div>
+
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
-
   <div class="contact-buttons">
-    <a href="mailto:shanmukhabandi6@gmail.com" class="contact-btn email">
+    <a class="contact email" href="mailto:shanmukhabandi6@gmail.com" aria-label="Send Email">
       <i class="fas fa-envelope"></i> Email
     </a>
-
-    <a href="https://github.com/shanmukhabandi17" target="_blank" class="contact-btn github">
+    <a class="contact github" href="https://github.com/shanmukhabandi17" target="_blank">
       <i class="fab fa-github"></i> GitHub
     </a>
-
-    <a href="https://www.linkedin.com/in/shanmukhabandi" target="_blank" class="contact-btn linkedin">
+    <a class="contact linkedin" href="https://linkedin.com/in/shanmukhabandi" target="_blank">
       <i class="fab fa-linkedin"></i> LinkedIn
     </a>
   </div>
 </section>
+</main>
 
-<footer>
-  <p>© 2026 Shannu | Portfolio</p>
+<!-- <footer role="contentinfo">
+
+  © 2026 Shanmukha Bandi
+</footer> -->
+
+<audio id="typingSound" preload="none">
+
+  <source src="https://assets.mixkit.co/sfx/preview/mixkit-typewriter-soft-click-1125.mp3">
+</audio>
+
+<!-- ===== PROJECT MODAL ===== -->
+<div class="modal" id="projectModal">
+
+  <div class="modal-content">
+
+    <span class="close-modal">&times;</span>
+
+    <h2 id="modalTitle"></h2>
+
+    <p id="modalDesc"></p>
+
+    <p id="modalTech"></p>
+
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+
+<script src="script.js" defer></script>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "Shanmukha Bandi",
+ "jobTitle": "Software Developer",
+ "url": "https://shanmukhabandi17.github.io/portfolio",
+ "sameAs": [
+   "https://github.com/shanmukhabandi17",
+   "https://linkedin.com/in/shanmukhabandi"
+ ]
+}
+</script>
+<!-- ===== FLOATING ACTION BUTTON ===== -->
+<div class="fab-container" id="fabContainer">
+
+  <button class="fab-main" id="fabMain" aria-label="Open quick actions">
+    <i class="fas fa-plus"></i>
+  </button>
+
+  <div class="fab-options">
+
+    <button class="fab-btn" id="scrollTop" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <a href="mailto:shanmukhabandi6@gmail.com" class="fab-btn" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+
+    <a href="https://linkedin.com/in/shanmukhabandi" target="_blank" class="fab-btn" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <a href="https://github.com/shanmukhabandi17" target="_blank" class="fab-btn" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+
+  </div>
+</div>
+
+
+
+</div>
+
+<section id="experience">
+  
+
+  <!-- Floating coding symbols -->
+  <div class="code-symbols">
+    <span>&lt;/&gt;</span>
+    <span>{ }</span>
+    <span>&lt;div&gt;</span>
+    <span>function()</span>
+    <span>&lt;html&gt;</span>
+    <span>const</span>
+    <span>&lt;css&gt;</span>
+    <span>() =&gt;</span>
+  </div>
+
+  <h2>Experience</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Project Developer – AgroCulture</h3>
+      <p>Developed a full-stack e-commerce platform connecting farmers and consumers.</p>
+      <p><strong>Tech:</strong> PHP, MySQL, HTML, CSS</p>
+    </div>
+
+    <div class="card">
+      <h3>Software Testing Project</h3>
+      <p>Performed manual testing on an e-commerce application.</p>
+      <p><strong>Skills:</strong> Test cases, bug reporting, STLC</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="achievements">
+  <h2>Achievements</h2>
+  <div class="achievement-bg-icons">
+
+  <span>🏆</span>
+  <span>⭐</span>
+  <span>🚀</span>
+  <span>💡</span>
+  <span>🥇</span>
+
+</div>
+
+
+  <div class="cards">
+
+    <div class="card">
+      🏆 Recognized by Karnataka State Council for Science and Technology (KSCSCT) for HerComfort project
+    </div>
+
+    <div class="card">
+      💡 Developed multiple full-stack and testing projects
+    </div>
+
+  </div>
+
+</section>
+
+  <section id="certifications">
+
+<h2>Certifications</h2>
+
+<div class="cert-grid">
+
+  <!-- Certificate 1 -->
+  <div class="cert-item"
+       data-img="images/certificates/ibm-python.jpg">
+
+    <img src="images/certificates/ibm-python.jpg " loading="lazy"
+         alt="IBM Python Certificate">
+
+    <div class="cert-info">
+      <h3>Data Analysis with Python</h3>
+      <p>IBM</p>
+    </div>
+
+  </div>
+
+
+  <!-- Certificate 2 -->
+  <div class="cert-item"
+       data-img="images/certificates/qspider-testing.jpg">
+
+    <img src="images/certificates/qspider-testing.jpg" loading="lazy"
+         alt="Software Testing Certificate">
+
+    <div class="cert-info">
+      <h3>Software Testing Certification</h3>
+      <p>QSpiders</p>
+    </div>
+
+  </div>
+
+
+  <!-- Certificate 3 -->
+  <div class="cert-item"
+       data-img="images/certificates/google-cloud.jpg">
+
+    <img src="images/certificates/google-cloud.jpg" loading="lazy"
+         alt="Google Cloud Certificate">
+
+    <div class="cert-info">
+      <h3>Google Cloud Foundations</h3>
+      <p>NPTEL</p>
+
+    </div>
+
+  </div>
+
+
+  <!-- Certificate 4 -->
+  <div class="cert-item"
+       data-img="images/certificates/computer-architecture.jpg">
+
+    <img src="images/certificates/computer-architecture.jpg" loading="lazy"
+         alt="Computer Architecture Certificate">
+
+    <div class="cert-info">
+      <h3>Computer Architecture</h3>
+      <p>NPTEL</p>
+
+    </div>
+
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- IMAGE VIEW MODAL -->
+<div id="certModal" class="cert-modal">
+
+  <span class="cert-close">&times;</span>
+
+  <img id="certPreview" class="cert-preview">
+
+</div>
+
+<!-- <section id="certifications">
+
+<h2>Certifications</h2>
+
+<div class="cards">
+
+<div class="card cert-card"
+data-img="images/certificates/ibm-python.jpg">
+Data Analysis with Python – IBM
+</div>
+
+<div class="card cert-card"
+data-img="images/certificates/qspider-testing.jpg">
+Software Testing Certification – Qspider
+</div>
+
+<div class="card cert-card"
+data-img="images/certificates/google-cloud.jpg">
+Google Cloud Computing Foundations – NPTEL
+</div>
+
+<div class="card cert-card"
+data-img="images/certificates/computer-architecture.jpg">
+Computer Architecture – NPTEL
+</div>
+
+</div>
+
+</section> -->
+
+<!-- <section id="certifications">
+
+<h2>Certifications</h2>
+
+<div class="cert-gallery">
+
+  Certificate 1
+  <div class="cert-item"
+       data-img="images/certificates/ibm-python.jpg">
+
+    <img src="images/certificates/ibm-python.jpg" alt="IBM Certificate">
+
+    <div class="cert-info">
+      <h3>Data Analysis with Python</h3>
+      <p>IBM</p>
+    </div>
+
+  </div>
+
+  Certificate 2
+  <div class="cert-item"
+       data-img="images/certificates/qspider-testing.jpg">
+
+    <img src="images/certificates/qspider-testing.jpg" alt="Qspider Certificate">
+
+    <div class="cert-info">
+      <h3>Software Testing Certification</h3>
+      <p>Qspider</p>
+    </div>
+
+  </div>
+
+  Certificate 3
+  <div class="cert-item"
+       data-img="images/certificates/google-cloud.jpg" alt="Google Cloud Certificate">
+
+    <img src="images/certificates/google-cloud.jpg">
+
+    <div class="cert-info">
+      <h3>Google Cloud Computing</h3>
+      <p>NPTEL</p>
+    </div>
+
+  </div>
+
+  Certificate 4
+  <div class="cert-item"
+       data-img="images/certificates/computer-architecture.jpg" alt="computer-architecture Certificate">
+
+    <img src="images/certificates/computer-architecture.jpg">
+
+    <div class="cert-info">
+      <h3>Computer Architecture</h3>
+      <p>NPTEL</p>
+    </div>
+
+  </div>
+
+</div>
+
+</section> -->
+
+
+<!-- <section id="github"> -->
+
+<!-- <h2>GitHub Activity</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://github-readme-stats.vercel.app/api?username=shanmukhabandi17&show_icons=true&theme=default"
+width="100%">
+
+</div>
+
+</div>
+
+</section> -->
+
+<section id="why-me">
+
+<h2>Why Hire Me</h2>
+
+<div class="cards">
+
+<div class="card">
+✔ Strong developer and tester skill combination
+</div>
+
+<div class="card">
+✔ Hands-on real-world project experience
+</div>
+
+<div class="card">
+✔ Strong debugging and problem solving skills
+</div>
+
+<div class="card">
+✔ Fast learner and passionate about technology
+</div>
+
+</div>
+
+</section>
+
+<section id="tools">
+
+<h2>Tools & Technologies</h2>
+
+<div class="cards">
+
+<div class="card">VS Code</div>
+<div class="card">Git & GitHub</div>
+<div class="card">XAMPP</div>
+<div class="card">Selenium</div>
+<!-- <div class="card">Chrome DevTools</div> -->
+
+</div>
+
+</section>
+
+<section id="resume-preview">
+
+<h2>Resume Preview</h2>
+
+<iframe loading="lazy" src="Shanmukha_Bandi_17.pdf"
+width="90%"
+height="500px"
+style="border-radius:15px;">
+</iframe>
+
+</section>
+
+<section id="availability">
+
+<h2>Availability</h2>
+
+<div class="card">
+
+I am actively looking for Software Developer and Software Tester opportunities.
+
+</div>
+
+</section>
+
+<!-- Certificate Modal -->
+<div id="certModal" class="cert-modal">
+
+  <span class="cert-close">&times;</span>
+
+  <img id="certImage" class="cert-modal-content">
+
+</div>
+
+<!-- <section id="github-live">
+  <h2>GitHub Overview</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Repositories</h3>
+      <p id="repoCount">Loading...</p>
+    </div>
+
+    <div class="card">
+      <h3>Followers</h3>
+      <p id="followerCount">Loading...</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Stars</h3>
+      <p id="starCount">Loading...</p>
+    </div>
+
+  </div>
+
+</section> -->
+
+<!-- <div class="project-filters">
+
+  <button data-filter="all">All</button>
+  <button data-filter="web">Web</button>
+  <button data-filter="ml">Machine Learning</button>
+  <button data-filter="testing">Testing</button>
+
+</div> -->
+<!-- <div class="project-card" data-category="web"> -->
+
+
+  <!-- <form id="contactForm">
+
+  <input type="text" placeholder="Your Name" required>
+
+  <input type="email" placeholder="Your Email" required>
+
+  <textarea placeholder="Message" required></textarea>
+
+  <button type="submit">Send Message</button>
+
+</form> -->
+
+<!-- <p>Total Visitors: <span id="visitorCount">Loading...</span></p> -->
+
+
+<!-- <span class="verify-badge">Verified</span> -->
+
+<!-- ================= AI CHATBOT ================= -->
+
+<div class="chatbot-container" id="chatbot">
+
+  <!-- Chat toggle button -->
+  <button class="chatbot-toggle" id="chatbotToggle">
+    <i class="fas fa-robot"></i>
+  </button>
+
+  <!-- Chat window -->
+  <div class="chatbot-window" id="chatbotWindow">
+
+    <div class="chatbot-header">
+      <span>Portfolio Assistant</span>
+      <button id="chatbotClose">&times;</button>
+    </div>
+
+    <div class="chatbot-messages" id="chatMessages">
+
+      <div class="bot-message">
+        Hi! I'm Shanmukha's assistant. Ask me anything 👋
+      </div>
+
+    </div>
+
+    <div class="chatbot-input">
+
+      <input
+        type="text"
+        id="chatInput"
+        placeholder="Ask about skills, projects, contact..."
+      >
+
+      <button id="chatSend">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="cursor-glow"></div>
+<!-- <footer class="premium-footer">
+
+  <div class="footer-container"> -->
+
+    <!-- Logo / Name -->
+    <!-- <div class="footer-brand"> -->
+      <!-- <div class="footer-logo">SB</div> -->
+      <!-- <h3>Shanmukha Bandi</h3>
+      <p>Software Developer & Software Tester</p>
+    </div> -->
+
+    <!-- Social Links -->
+    <!-- <div class="footer-social">
+
+      <a href="mailto:shanmukhabandi6@gmail.com"
+         aria-label="Email"
+         class="social-icon email">
+        <i class="fas fa-envelope"></i>
+      </a>
+
+      <a href="https://github.com/shanmukhabandi17"
+         target="_blank"
+         aria-label="GitHub"
+         class="social-icon github">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a href="https://linkedin.com/in/shanmukhabandi"
+         target="_blank"
+         aria-label="LinkedIn"
+         class="social-icon linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+
+    </div>
+
+  </div> -->
+
+  <!-- Bottom -->
+  <!-- <div class="footer-bottom">
+    © 2026 Shanmukha Bandi. All rights reserved.
+  </div>
+
+</footer> -->
+
+<footer class="premium-footer">
+
+  <!-- Wave separator -->
+  <div class="footer-wave">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,40 C240,100 480,0 720,40 C960,80 1200,20 1440,60 L1440,0 L0,0 Z"></path>
+    </svg>
+  </div>
+
+  <!-- particles -->
+  <div id="footer-particles"></div>
+
+  <div class="footer-container">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+      <!-- <div class="footer-logo">SB</div> -->
+      <h3>Shanmukha Bandi</h3>
+      <p>Software Developer & Software Tester</p>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-social">
+
+      <a href="mailto:shanmukhabandi6@gmail.com"
+         class="social-icon email">
+        <i class="fas fa-envelope"></i>
+      </a>
+
+      <a href="https://github.com/shanmukhabandi17"
+         target="_blank"
+         class="social-icon github">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a href="https://linkedin.com/in/shanmukhabandi"
+         target="_blank"
+         class="social-icon linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Shanmukha Bandi. All rights reserved.
+  </div>
+
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
